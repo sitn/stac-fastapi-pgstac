@@ -66,6 +66,7 @@ class CoreCrudClient(AsyncBaseCoreClient):
             collections by default.
         """
         base_url = get_base_url(request)
+        print(base_url)
 
         next_link: Optional[Dict[str, Any]] = None
         prev_link: Optional[Dict[str, Any]] = None
