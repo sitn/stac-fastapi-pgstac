@@ -81,6 +81,7 @@ class BaseLinks:
                 link = getattr(self, name)()
                 if link is not None:
                     links.append(link)
+        print(links)
         return links
 
     async def get_links(
