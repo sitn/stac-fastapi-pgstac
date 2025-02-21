@@ -80,8 +80,8 @@ class BaseLinks:
             if name.startswith("link_") and callable(getattr(self, name)):
                 link = getattr(self, name)()
                 if link is not None:
+                    print(link)
                     links.append(link)
-        print(links)
         return links
 
     async def get_links(
