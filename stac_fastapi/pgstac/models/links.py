@@ -99,7 +99,7 @@ class BaseLinks:
         # join passed in links with generated links
         # and update relative paths
 
-        #links = self.create_links()
+        links = []#self.create_links()
 
         if extra_links:
             # For extra links passed in,
