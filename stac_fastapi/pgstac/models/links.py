@@ -98,7 +98,8 @@ class BaseLinks:
             self.request.postbody = await self.request.json()
         # join passed in links with generated links
         # and update relative paths
-        links = self.create_links()
+
+        #links = self.create_links()
 
         if extra_links:
             # For extra links passed in,
@@ -112,7 +113,7 @@ class BaseLinks:
             links += [
                 {**link, "href": self.resolve(link["href"])}
                 for link in extra_links
-                if link["rel"] not in INFERRED_LINK_RELS
+                #if link["rel"] not in INFERRED_LINK_RELS
             ]
 
         return links
