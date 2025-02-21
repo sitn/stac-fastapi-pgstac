@@ -87,6 +87,7 @@ class BaseLinks:
     async def get_links(
         self, extra_links: Optional[List[Dict[str, Any]]] = None
     ) -> List[Dict[str, Any]]:
+        print(extra_links)
         """
         Generate all the links.
 
